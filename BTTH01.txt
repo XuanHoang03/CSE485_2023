@@ -1,0 +1,6 @@
+id,name,age,gpa
+1,Cuong,21,4
+2,Hoang,20,4
+3,Hoang Anh,24,4
+4,Long,20,4
+5,James Rodriguez,14,3000
