@@ -12,7 +12,7 @@ class StudentDAO{
     }
 
     public function read(Student $student){
-        echo "ID: " . $student->getId() ."<br>Name: " . $student->getName() . "<br>Age: " . $student->getAge() ; 
+        echo "ID: " . $student->getId() ."\tName: " . $student->getName() . "\tAge: " . $student->getAge() ; 
     }
 
     public function getElementById($ID){
@@ -44,6 +44,17 @@ class StudentDAO{
         foreach( $this->_groups as $elements){
             echo "<br>";
             $this->read($elements);
+        }
+    }
+
+    public function ifHave($ID){
+        foreach($this->_groups as $element){
+            if($element->getId() == $ID){
+                return false;
+            }
+            else{
+                return true;
+            }
         }
     }
 }
